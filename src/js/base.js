@@ -120,7 +120,7 @@ define([
 				strPageURL = strPageURL.substr(0, strPageURL.indexOf("#"));
 			}
 			strShareHead = "Say what? Absurd political slogans of the past";
-			strShareChatter = objImmerse.arrQuoteText[objImmerse.currentQuote][0] + " As politicians begin to throw their hat in the 2016 presidential race, take a look at absurd political slogans of America past, and find out context about when and why they were used.";
+			strShareChatter = objImmerse.arrQuoteText[objImmerse.currentQuote][0] + " As politicians begin to throw their hats into the 2016 presidential race, take a look at absurd political slogans of America past, and find out context about when and why they were used.";
 			if (objImmerse.blnFirst) {
 				strShareTwitter = strShareHead;
 			} else {
@@ -129,7 +129,7 @@ define([
 			strShareHead = strShareHead.replace(/'/gi, "\\'");
 			strShareChatter = strShareChatter.replace(/\+/gi, "%2B");
 			strShareTwitter = strShareTwitter.replace(/\+/gi, "%2B");
-			objImmerse.arrShare.find(".fbshare").attr({"href" : "https://www.facebook.com/dialog/feed?display=popup&app_id=" + config.facebook.app_id + "&link=" + encodeURIComponent(strPageURL) + "&picture=http://www.gannett-cdn.com/experiments/usatoday/2015/04/campaign-slogans/images/fb-post.jpg&name=" + encodeURIComponent(strShareHead) + "&description=" + encodeURIComponent(strShareChatter) + "&redirect_uri=http://usatoday30.usatoday.com/_common/_dialogs/fb-share-done.html"});
+			objImmerse.arrShare.find(".fbshare").attr({"href" : "https://www.facebook.com/dialog/feed?display=popup&app_id=" + config.facebook.app_id + "&link=" + encodeURIComponent(strPageURL) + "&picture=http://www.gannett-cdn.com/experiments/usatoday/2015/04/campaign-slogans/images/fb-post.jpg&name=" + encodeURIComponent(strShareHead) + "&description=" + encodeURIComponent(strShareChatter) + "&redirect_uri=http://" + window.location.hostname + "/pages/interactives/fb-share/"});
 			objImmerse.arrShare.find(".tshare").attr({"href" : "https://twitter.com/intent/tweet?url=" + encodeURIComponent(strPageURL) + "&text=" + encodeURIComponent(strShareTwitter) + "&via=usatoday"});
 			objImmerse.arrShare.find(".eshare").attr({"href" : "mailto:?body=" + strShareChatter + " %0d%0d " + encodeURIComponent(strPageURL) + "&subject=" + strShareHead});
 		};

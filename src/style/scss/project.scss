@@ -89,7 +89,7 @@ html.vert-display .page-container {
     font-size: 300%;
     letter-spacing: 1px;
     line-height: 100%;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5;
     text-transform: uppercase;  
 }
 html.vert-display .quote {
@@ -257,7 +257,7 @@ html.mobile .share img {
     max-width: 80%;
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     width: 400px;
 }
 
