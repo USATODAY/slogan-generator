@@ -1,0 +1,74 @@
+/************
+
+Colors
+
+************/
+
+$dark-blue: #144F71;
+$blue: #1B9CFA;
+$blue2: #1b88fa;
+$light-blue: #9ed5fb;
+$dark-grey: #231F20;
+$medium-grey: #6D6E70;
+$light-grey: #E5E5E5;
+$extra-light-grey: #E6E6E6;
+$orange: #FA6622;
+$green: #19a743;
+$green2: #1d9c34;
+$red: #e62319;
+$purple: #9d29ba;
+$teal: #1fc0bf;
+$yellow: #fbc124;
+
+$greater-color: #33b8f2;
+$less-color: #81d102;
+$none-color: #ff8b00;
+
+/************
+
+Shadow
+
+************/
+
+$shadow-standard: 0px 0px 15px rgba(0, 0, 0, 0.15);
+$shadow-big: 0px 0px 30px rgba(0, 0, 0, 0.80);
+
+
+/************
+
+Fonts
+
+************/
+
+@font-face {
+    font-family: 'Futura Today Light';
+    src: url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_light.eot') format('eot');
+    src: url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_light.woff') format('woff'),
+         url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_light.ttf') format('truetype'),
+         url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_light.svg') format('svg');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Futura Today Normal';
+    src: url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_normal.eot') format('eot');
+    src: url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_normal.woff') format('woff'),
+         url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_normal.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Futura Today Demibold';
+    src: url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_demibold.eot') format('eot');
+    src: url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_demibold.woff') format('woff'),
+         url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_demibold.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Futura Today Bold';
+    src: url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_bold.eot') format('eot');
+    src: url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_bold.woff') format('woff'),
+         url('http://www.gannett-cdn.com/GDContent/global/fonts/futura_today_bold.ttf') format('truetype');
+    font-weight: 700;
+}

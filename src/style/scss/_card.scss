@@ -1,0 +1,145 @@
+.card {
+  background-color: #FFFFFF;
+  box-shadow: $shadow-standard;
+
+  margin: 0 auto 2em auto;
+  padding: 2em;
+  // position: static;
+  transition: transform 800ms ease;
+  
+  &.active {
+
+    transform: translate(0, 0);
+    transition: transform 800ms ease;
+    
+  }
+  &.next {
+    transform: translate(0, 2000px);
+    transition: transform 800ms ease;
+  }
+
+  &.previous {
+      // position: absolute;
+      transform: translate(0, -2000px);
+      transition: transform 800ms ease;
+    }
+    @media(max-width: 800px) {
+      padding: 4em 2em;
+    }
+}
+
+.chart-labels {
+  padding: 0 40px;
+  margin-top: 2em;
+  width: 100%;
+  @extend .group;
+}
+
+.chart-label {
+  display: inline-block;
+  float: left;
+  font-family: "Futura Today Light", Arial, sans-serif;
+  font-size: 2em;
+  margin-right: 2%;
+  text-align: center;
+  width: 31%;
+}
+
+.age {
+  color: $yellow;
+}
+
+.gender{
+  color: $blue2;
+}
+
+.state {
+  color: $green2;
+}
+
+.small-card {
+  cursor: pointer;
+  float: left;
+  height: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  transition: transform 200ms ease;
+  width: 350px;
+  &:hover {
+    transform: translate(0, 5px);
+    transition: transform 200ms ease;
+  }
+}
+
+
+
+.category-bar {
+  // height: 30px;
+  font-family: "Futura Today Light", Arial, sans-serif;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  text-align: left;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  @extend .group;
+}
+
+.category {
+  color: white;
+  display: inline-block;
+  float: left;
+  // height: 100%;
+  margin: 0;
+  padding: 8px;
+  &.Health { background-color: $purple;}
+   &.Outbreak { background-color: $teal;}
+    &.USA { background-color: $blue;}
+    &.Myth-buster { background-color: $blue;}
+
+}
+
+.close-card {
+  background-image: url('../img/close-icon.svg');
+  cursor: pointer;
+  height: 2em;
+  position: absolute;
+  text-align: right;
+  top: 1em;
+  right: 1em;
+  width: 2em;
+  span {
+    clear: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+#social {
+  bottom: 2em;
+  position: absolute;
+  right: 2em;
+  @media(max-width: 800px) {
+    position: static;
+    float: right;
+  }
+}
+
+.social-icon{
+  margin: 0;
+  height: 40px;
+  width: 40px;
+}
+
+.social-link {
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+}

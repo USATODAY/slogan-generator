@@ -1,0 +1,282 @@
+@import "fonts";
+@import "bits";
+@import "base";
+@import "typography";
+@import "card";
+@import "buttons";
+
+
+@charset "UTF-8";
+/* CSS Document */
+
+.transition-wrap, #overlay, .non-article-content {
+    height: 100% !important;
+    padding: 0 !important;
+}
+
+html body article {
+    height: 100%;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+body .page-container {
+    // background: #fff;
+    color: #fff;
+    display: block;
+    font-family: "Futura Today", Arial,sans-serif;
+    // font-size: 10px;
+    height: 100%;
+    line-height: 1.4;
+    
+    min-height: 539px;
+    padding: 0;
+    position: relative;
+    
+    width: 100%;
+}
+
+html, body, article {
+    height: 100%;
+}
+
+#header {
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+}
+
+.page-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 100%;
+}
+
+html.vert-display .page-container {
+    // background-size: 130%;
+}
+
+.quote-panel {
+    bottom: 0px;
+    display: none;
+    margin: 10% 10% 0% 10%;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    z-index: 3;
+}
+
+.quote-panel.active {
+    display: block;
+}
+
+.quote-panel.left {
+    padding: 10% 10% 0% 3%;
+    text-align: left;
+}
+
+.quote-panel.right {
+    padding: 10% 2% 0% 18%;
+    text-align: right;
+}
+
+.quote {
+    font-family: "Futura Today Bold", Arial,sans-serif;
+    font-size: 300%;
+    letter-spacing: 1px;
+    line-height: 100%;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;  
+}
+html.vert-display .quote {
+    font-size: 420%;
+    margin-bottom: -2.5%;
+}
+
+.quote-panel.left .quote {
+    font-size: 340%;
+    width: 70%;
+}
+html.vert-display .quote-panel.left .quote, html.vert-display .quote-panel.right .quote {
+    font-size: 420%;
+}
+
+.quote-panel.right .quote {
+    font-size: 340%;
+    width: 70%;
+    position: relative;
+    left: 30%;
+}
+
+.reference {
+    font-family: "Futura Today", Arial,sans-serif;
+    font-size: 150%;
+    letter-spacing: 1px;
+    line-height: 100%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+.quote-panel.right .reference {
+    left: 30%;
+    position: relative;
+    width: 70%;
+}
+.quote-panel.left .reference {
+    width: 70%;
+}
+html.vert-display .reference {
+    font-size: 250%;
+}
+
+.next {
+    background: #3da7f2;
+    border-radius: 1.9%/12%;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Futura Today Bold", Arial,sans-serif;
+    font-size: 180%;
+    left: 30%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    padding-bottom: 1.20%;
+    padding-top: 1.25%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    visibility: hidden;
+    width: 42%;
+}
+
+.quote-panel.left .next {
+    left: 0%;
+}
+
+.quote-panel.right .next {
+    left: 58%;
+}
+.next.active {
+    visibility: visible;
+}
+
+html.vert-display .next, html.vert-display .show-context  {
+    font-size: 220%;
+    left: 15%;
+    padding-bottom: 3.20%;
+    padding-top: 3.25%;
+    width: 78%;
+}
+
+html.vert-display .quote-panel.right .next {
+    left: 22%;
+}
+
+.gradient-layer {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)); /* Standard syntax */
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;    
+    z-index: 2;
+}
+
+.gradient-layer.hide {
+    display: none;
+}
+
+.credits {
+    padding-top: 2px;
+    text-align: center;
+    text-indent: 5px;
+    width: 100%;
+}
+
+.footer {
+    background: #222;
+    bottom: 0px;
+    color: #999;
+    font-size: 120%;
+    left: 0px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+    position: relative;
+    text-align: center;
+    text-indent: 5px;
+    width: 100%;
+    z-index: 4;
+}
+
+.footer a {
+    color: #999;
+}
+.footer.hide {
+    display: none;
+}
+
+.share {
+    float: left;
+    margin-bottom: 1em;
+    width: 100%;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.share img {
+    width: 5%;
+}
+html.vert-display .share img {
+    width: 15% !important;
+}
+html.mobile .share img {
+    width: 10%;
+}
+
+.context {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.context p {
+    font-size: 1.2em;
+    left: 50%;
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+.show-context {
+    background: #3da7f2;
+    border-radius: 1.9%/12%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-family: "Futura Today Bold", Arial,sans-serif;
+    font-size: 2em;
+    left: 30%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    padding-bottom: 1.20%;
+    padding-top: 1.25%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 42%;
+
+}

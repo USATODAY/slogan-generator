@@ -1,0 +1,33 @@
+html { font-weight: normal; font-family: "Futura Today Normal", Arial,sans-serif;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Futura Today Bold", Arial,sans-serif;
+}
+
+.chatter {
+  font-size: 1em;
+  margin: 0 auto 2em auto;
+  max-width: 30em;
+}
+
+.page-header {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+  @media (min-width: 1100px) {
+    font-size: 2em;
+  }
+}
+
+.detail-header {
+  font-family: "Futura Today DemiBold", Arial,sans-serif;
+}
+
+.info-text {
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+strong {
+  font-family: "Futura Today Bold", Arial,sans-serif;
+}
