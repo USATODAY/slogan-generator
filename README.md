@@ -23,4 +23,4 @@ Once those dependencies are set up, from this repository run `npm install`, then
 
 
 ###Live version:
-http://www.gannett-cdn.com/experiments/usatoday/2015/04/slogans/
+http://www.usatoday.com/pages/interactives/campaign-slogan-generator/
